@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Rock, Paper, Scissor</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <div class="flex container">
+        <div class="header_display">
+            <span class="left_edge"></span>
+            <h1>Rock, Paper, Scissor</h1>
+            <span class="right_edge"></span>
+        </div>
+        <div class="game_mode">
+            <h2>Choose game mode</h2>
+            <div class="flex game_mode_container">
+                <button class="bestOf_btn" title="Best of 3">Best of 3</button>
+                <button class="bestOf_btn" title="Best of 5">Best of 5</button>
+                <button class="bestOf_btn" title="Best of 7">Best of 7</button>
+            </div>
+        </div>
+        <div class="flex score">
+            <div>
+                <span class="score_display player_score">0</span>
+                <span class="score_display computer_score">0</span>
+            </div>
+            <div class="flex caption">
+                <p>You</p>
+                <p>Computer</p>
+            </div>
+        </div>
+        <div>
+            <button class="player_choice" title="Rock">Rock</button>
+            <button class="player_choice" title="Paper">Paper</button>
+            <button class="player_choice" title="Scissor">Scissor</button>
+        </div>
+    </div>
 </body>
 </html>
